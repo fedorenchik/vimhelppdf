@@ -24,6 +24,7 @@ fi
 
 echo Copying files into doc directory
 cp vim/runtime/doc/tags vim/runtime/doc/*.txt vim_faq/doc/vim_faq.txt doc
+cp vim/runtime/pack/dist/opt/matchit/doc/matchit.txt doc
 
 echo Writing tags.txt
 awk 'BEGIN { ORS=" " } { print $1 }' doc/tags | fold -sw 78 > doc/tags.txt
